@@ -1,5 +1,5 @@
 body {
-    background-color: #FFC0CB; /* 분홍색 배경 */
+    background-color: #FED7C3; /* 분홍색 배경 */
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
 }
 
 #header {
-    background-color: #FFA500; /* 주황색 헤더 배경 */
+    background-color: #FED7C3; /* 주황색 헤더 배경 */
     padding: 10px;
 }
 
@@ -20,16 +20,19 @@ h1 {
     padding: 50px;
 }
 
-#moveButton {
-    background-color: #FF4500; /* 주황색 버튼 배경 */
-    color: white;
+.btn-link {
+    display: inline-block;
     padding: 10px 20px;
+    background-color: #007bff; /* 배경색 */
+    color: #fff; /* 텍스트 색상 */
     border: none;
     border-radius: 5px;
-    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
     cursor: pointer;
+    font-size: 16px;
 }
 
-#moveButton:hover {
-    background-color: #FF6347; /* 버튼에 호버 효과 추가 */
+.btn-link:hover {
+    background-color: #0056b3; /* 호버 시 배경색 변경 */
 }
