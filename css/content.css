@@ -1,3 +1,27 @@
-.no-js { 
-    display:none; 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.btn-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; /* 배경색 */
+    color: #fff; /* 텍스트 색상 */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-link:hover {
+    background-color: #0056b3; /* 호버 시 배경색 변경 */
+}
+
+#header {
+    padding: 10px;
 }
