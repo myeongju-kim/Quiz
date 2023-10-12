@@ -13,6 +13,7 @@ function correctPopup(page) {
     }, 50);
     // 3초 뒤에 페이지 이동
     setTimeout(function () {
+        correct.style.display = 'none';
         window.location.href = page;
-    }, 3000);
+    }, 5000);
 }

@@ -10,17 +10,23 @@
     <meta name="apple-mobile-web-app-title" content="KingMJ" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <script src="js/popup.js"></script>
+    <script src="../js/popup.js"></script>
 </head>
 <body>
     <div id="header">
         <h1>두 번째 페이지</h1>
     </div>
     <div id="content">
-        <p><button onclick="showPopup()" class="btn-link">사과</button></p>
-        <p><button onclick="showPopup()" class="btn-link">키위</button></p>
-        <p><button onclick="showPopup()" class="btn-link">참외</button></p>
-        <p><a href="third.html" class="btn-link">딸기</a></p>
+        <p><button onclick="deletePopup()" class="btn-link">사과</button></p>
+        <p><button onclick="correctPopup('third.html')" class="btn-link">딸기</button></p>
+        <p><button onclick="deletePopup()" class="btn-link">복숭아</button></p>
+        <p><button onclick="deletePopup()" class="btn-link">수박</button></p>
+        <div id ="correct">
+            그렇죠!! 정답은 딸기였습니다.<br>
+            딸기는 남북전쟁에서 딸기 폭탄을 투척한데에서 유래했습니다.<br>
+            그 덕분에 지금 딸기는 맛있게 익었죠. 딱딱 딸기가 진리입니다.
+            <div id="loading"></div>
+        </div>
     </div>
 </body>
 <script>
