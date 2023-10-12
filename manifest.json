@@ -1,7 +1,7 @@
 {
-    "name": "안녕하세요! PWA by JS",
-    "short_name": "PWA by JS",
-    "description": "PWA start program",
+    "name": "비행기",
+    "short_name": "KingMJ",
+    "description": "made by kingmj",
     "scope": ".",
     "start_url": "./",
     "display": "standalone",
