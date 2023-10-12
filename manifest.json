@@ -1,13 +1,13 @@
 {
-    "name": "비행기",
+    "name": "퀴즈 쇼",
     "short_name": "KingMJ",
     "description": "made by kingmj",
     "scope": ".",
     "start_url": "./",
     "display": "standalone",
     "orientation": "portrait",
-    "theme_color": "#FFC0CB",
-    "background_color": "#FFC0CB",
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
     "icons": [
       {
         "src": "images/run128.png",
