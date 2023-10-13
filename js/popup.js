@@ -1,10 +1,26 @@
-function deletePopup() {
+function showAlert() {
     alert('오답입니다.');
 }
+function deletePopup(btnId) {
+    const btn = document.getElementById(btnId);
+    btn.style.background = '#F77F63';
+    btn.style.color = '#fff';
+    setTimeout(function () {
+        alert('오답입니다.');
+        btn.style.background = '#F9FAF3';
+        btn.style.color = '#F77F63';
+    }, 50);
+}
 
-function correctPopup(page) {
+function correctPopup(page, btnId) {
     const correct = document.getElementById('correct');
     const loadingBar = document.getElementById('loading');
+    const btn = document.getElementById(btnId);
+    const check = document.getElementById('check');
+    check.style.display = 'block';
+    btn.style.background = '#92CE6B';
+    btn.style.border = '2px solid #92CE6B';
+    btn.style.color = '#fff';
     // 초기 너비를 100%로 설정
 
     correct.style.display = 'block';
@@ -14,6 +30,9 @@ function correctPopup(page) {
     // 3초 뒤에 페이지 이동
     setTimeout(function () {
         correct.style.display = 'none';
+        btn.style.background = '#F9FAF3';
+        btn.style.color = '#F77F63';
+        btn.style.border = '2px solid #F77F63';
         window.location.href = page;
     }, 5000);
 }

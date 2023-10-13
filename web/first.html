@@ -17,10 +17,17 @@
         <h1>첫 번째 페이지</h1>
     </div>
     <div id="content">
-        <p><button onclick="deletePopup()" class="btn-link">오징어</button></p>
-        <p><button onclick="deletePopup()" class="btn-link">해삼</button></p>
-        <p><button onclick="deletePopup()" class="btn-link">말미잘</button></p>
-        <p><button onclick="correctPopup('second.html')" class="btn-link">문어</button></p>
+        <div class="question">
+            <h2>Q. 김명주의 별명이 아닌것은?</h2>
+            <img id="qImg" src="../images/question/Q1.png">
+        </div>
+        <div class="answer">
+            <p><button onclick="deletePopup('btn1')" class="btn-link" id="btn1">오징어</button></p>
+            <p><button onclick="deletePopup('btn2')" class="btn-link" id="btn2">해삼</button></p>
+            <p><button onclick="deletePopup('btn3')" class="btn-link" id="btn3">말미잘</button></p>
+            <p><button onclick="correctPopup('second.html', 'btn4')" class="btn-link" id="btn4">원빈
+                <img src="../images/check.png" id ="check"></button></p>
+        </div>
         <div id ="correct">
             그렇죠!! 정답은 문어였습니다.<br>
             문어는 1238년 처음으로 식용으로 사용되었고<br>
