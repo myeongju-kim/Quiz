@@ -14,7 +14,10 @@
 </head>
 <body>
     <div id="header">
-        <h1>첫 번째 페이지</h1>
+        <div class="progress-bar">
+            <img src="../images/gift.png" id="gift-one">
+            <div class="progress-section" style="width: 20%;"></div>
+        </div>
     </div>
     <div id="content">
         <div class="question">
@@ -25,7 +28,7 @@
             <p><button onclick="deletePopup('btn1')" class="btn-link" id="btn1">오징어</button></p>
             <p><button onclick="deletePopup('btn2')" class="btn-link" id="btn2">해삼</button></p>
             <p><button onclick="deletePopup('btn3')" class="btn-link" id="btn3">말미잘</button></p>
-            <p><button onclick="correctPopup('second.html', 'btn4')" class="btn-link" id="btn4">원빈
+            <p><button onclick="correctPopup('second.html', 'btn4', true)" class="btn-link" id="btn4">원빈
                 <img src="../images/check.png" id ="check"></button></p>
         </div>
         <div id ="correct">
@@ -34,6 +37,7 @@
             그 덕분에 지금 초장에 찍어먹으면 밥도둑입니다.
             <div id="loading"></div>
         </div>
+        <img src="../images/gift.gif" id="gift-open">
     </div>
 </body>
 <script>

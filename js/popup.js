@@ -12,7 +12,7 @@ function deletePopup(btnId) {
     }, 50);
 }
 
-function correctPopup(page, btnId) {
+function correctPopup(page, btnId, isGift) {
     const correct = document.getElementById('correct');
     const loadingBar = document.getElementById('loading');
     const btn = document.getElementById(btnId);
@@ -22,14 +22,17 @@ function correctPopup(page, btnId) {
     btn.style.border = '2px solid #92CE6B';
     btn.style.color = '#fff';
     // 초기 너비를 100%로 설정
-
     correct.style.display = 'block';
+
+    const gift = document.getElementById('gift-open');
+    isGift == true ? (gift.style.display = 'block') : (gift.style.display = 'none');
     setTimeout(function () {
         loadingBar.style.width = '100%';
     }, 50);
     // 3초 뒤에 페이지 이동
     setTimeout(function () {
         correct.style.display = 'none';
+        gift.style.display = 'none';
         btn.style.background = '#F9FAF3';
         btn.style.color = '#F77F63';
         btn.style.border = '2px solid #F77F63';
