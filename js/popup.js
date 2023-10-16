@@ -1,7 +1,3 @@
-function noBack() {
-    window.history.forward();
-}
-
 function showAlert() {
     alert('오답입니다.');
 }

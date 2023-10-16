@@ -4,6 +4,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #F9FAF3;
     text-align: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 .btn-link {
