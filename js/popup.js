@@ -1,27 +1,10 @@
-function preventSlideBack() {
-    let startX, startY;
-
-    document.addEventListener('touchstart', function (e) {
-        startX = e.touches[0].clientX;
-        startY = e.touches[0].clientY;
-
-        document.addEventListener('touchmove', swipeHandler);
-    });
-
-    function swipeHandler(e) {
-        let endX = e.touches[0].clientX;
-        let endY = e.touches[0].clientY;
-
-        let deltaX = startX - endX;
-        let deltaY = startY - endY;
-
-        // 수평 스와이프를 감지하고, 스와이프 길이가 충분하면 뒤로 가기를 막음
-        if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 50) {
-            e.preventDefault();
-        }
-
-        document.removeEventListener('touchmove', swipeHandler);
-    }
+function goBack() {
+    setTimeout(function () {
+        history.pushState(null, null, location.href);
+        window.onpopstate = function (event) {
+            history.forward();
+        };
+    }, 1000);
 }
 function showAlert() {
     alert('오답입니다.');
