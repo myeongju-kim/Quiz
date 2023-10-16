@@ -1,3 +1,6 @@
+window.addEventListener('popstate', function (e) {
+    history.pushState(null, null, window.location.href);
+});
 function showAlert() {
     alert('오답입니다.');
 }
