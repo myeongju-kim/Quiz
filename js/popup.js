@@ -1,3 +1,7 @@
+function noBack() {
+    window.history.forward();
+}
+
 function showAlert() {
     alert('오답입니다.');
 }
@@ -33,6 +37,7 @@ function correctPopup(page, btnId, isGift) {
     setTimeout(function () {
         correct.style.display = 'none';
         gift.style.display = 'none';
+        check.style.display = 'none';
         btn.style.background = '#F9FAF3';
         btn.style.color = '#F77F63';
         btn.style.border = '2px solid #F77F63';
