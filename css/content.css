@@ -71,11 +71,12 @@ body {
 }
 .progress-bar {
     position: relative;
-    width: 90%; /* 프로그레스 바의 너비 설정 */
+    float: left;
+    width: 15%; /* 프로그레스 바의 너비 설정 */
     height: 15px; /* 프로그레스 바의 높이 설정 */
     background-color: #ccc; /* 기본 배경색 설정 */
     border-radius: 7px; /* 원형 모양으로 만들기 */
-    margin-left: 5%;
+    margin-left: 4.2%;
 }
   
 .progress-section {
@@ -86,14 +87,14 @@ body {
     border-radius: 7px; /* 원형 모양으로 만들기 */
 }
 
-#gift-one{
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left:-5px;
-    margin-top: -6px;
+#gift{
+    position: relative;
+    width: auto;
+    height: 110%;
+    margin-top: -2px;
     z-index: 90;
 }
+
 #gift-open{
     display: none;
     width: 300px;
