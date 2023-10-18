@@ -1,10 +1,8 @@
 function goBack() {
-    setTimeout(function () {
-        history.pushState(null, null, location.href);
-        window.onpopstate = function (event) {
-            history.forward();
-        };
-    }, 1000);
+    history.pushState(null, null, location.href);
+    history.pushState(null, null, location.href);
+    history.pushState(null, null, location.href);
+    history.pushState(null, null, location.href);
 }
 function showAlert() {
     alert('오답입니다.');

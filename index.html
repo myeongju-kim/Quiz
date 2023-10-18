@@ -21,7 +21,15 @@
         <p>실생활 퀴즈</p>
     </div>
     <div id="content">
-        <a href="web/first.html" class="btn-link">이동하기</a>
+        <a href="web/first.html" class="btn-link"><img src = "images/start.png" class = 'start' ></a>
     </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            history.pushState(null, null, location.href);
+            window.onpopstate = function (event) {
+                history.forward();
+            };
+        });
+    </script>
 </body>
 </html>
